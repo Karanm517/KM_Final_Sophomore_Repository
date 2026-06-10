@@ -1,91 +1,102 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <meta name="description" content="Karan Mehta Portfolio" />
+  <meta name="author" content="Karan Mehta" />
+
+  <title>Karan Mehta | Portfolio</title>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+<header>
+  <nav class="navbar">
+    <div class="navbar-left">
+      <img src="file-pokeball-png-0.png" alt="Logo" />
+    </div>
+
+```
+<ul class="navbar-right">
+  <li><a href="index.html">Home</a></li>
+  <li><a href="projects.html">Projects</a></li>
+  <li><a href="cfus.html">CFUs</a></li>
+  <li><a href="contact.html">Let's Connect</a></li>
+</ul>
+```
+
+  </nav>
+</header>
+
 <main class="home-card">
 
-  <!-- ABOUT ME -->
   <section class="resource-card">
     <div class="bio">
 
-      <div class="bio-pic">
-        <img src="unnamed.jpg" alt="Profile Picture" />
-      </div>
+```
+  <div class="bio-pic">
+    <img src="unnamed.jpg" alt="Profile Picture" />
+  </div>
 
-      <div class="bio-text">
-        <h1>Karan Mehta</h1>
-        <h4>Student Developer • Programmer • Aspiring Game Designer</h4>
+  <div class="bio-text">
+    <h1>Karan Mehta</h1>
+    <h4>Student Developer • Programmer • Aspiring Game Designer</h4>
 
-        <p>
-          I am a junior at Thomas A. Edison High School with a strong passion for
-          programming, technology, and interactive digital experiences. Over the
-          past several years, I have explored different areas of software
-          development, including Python programming, web development, and game
-          design. What started as a curiosity about how games and applications are
-          built has grown into a genuine interest in creating my own projects and
-          learning the tools used by professional developers.
-        </p>
+    <p>
+      I am a junior at Thomas A. Edison High School with a strong passion for programming, technology, game development, and interactive digital experiences. Over the years, I have explored multiple areas of computer science, including Python programming, web development, application design, and software engineering. What started as simple curiosity has developed into a genuine passion for creating projects that combine creativity with technical problem-solving.
+    </p>
 
-        <p>
-          Through coursework and independent projects, I have gained experience
-          working with programming concepts such as problem-solving, algorithms,
-          event-driven programming, and user interaction design. I enjoy taking an
-          idea from the planning stage and turning it into something people can
-          interact with, whether it is a game, simulation, or web application.
-          Every project presents new challenges that help me strengthen both my
-          technical and creative thinking skills.
-        </p>
+    <p>
+      Through both coursework and independent learning, I have developed experience working with programming concepts such as algorithms, event-driven systems, user interface design, debugging, and iterative development. I enjoy transforming ideas into working applications and continuously improving them through testing, feedback, and refinement.
+    </p>
 
-        <p>
-          One area that especially interests me is game development. I enjoy
-          designing systems, creating engaging user experiences, and experimenting
-          with different gameplay mechanics. Working on game-related projects has
-          taught me the importance of iteration, testing, and continuous
-          improvement. Throughout the development process, I focus on learning from
-          mistakes, refining ideas, and finding creative solutions to technical
-          challenges.
-        </p>
+    <p>
+      One of my primary interests is game design and development. I enjoy studying how games engage players through mechanics, progression systems, visual design, and interactive storytelling. Building projects has taught me the value of persistence, adaptability, and attention to detail while helping me strengthen my technical and creative skills.
+    </p>
 
-        <p>
-          My goal is to continue expanding my programming knowledge while building
-          increasingly sophisticated applications and games. As I progress through
-          my education, I hope to further develop my skills in software
-          engineering, game design, and interactive media while creating projects
-          that demonstrate both technical ability and creativity.
-        </p>
+    <p>
+      My long-term goal is to pursue a career in software development and game design, creating applications and experiences that are both functional and engaging. I am constantly seeking opportunities to expand my knowledge, explore new technologies, and take on challenging projects that push my abilities as a developer.
+    </p>
 
-      </div>
-    </div>
+  </div>
+</div>
+```
+
   </section>
 
-  <!-- FEATURED PROJECT -->
   <section class="resource-card">
 
-    <h2>Featured Project: DragonZ</h2>
+```
+<h2>Featured Project: DragonZ</h2>
 
-    <p>
-      DragonZ is a game development project created as part of my exploration of
-      application design, interactive systems, and user engagement. The project
-      includes a playable demonstration as well as a development presentation that
-      documents the planning process, design decisions, implementation challenges,
-      testing stages, and improvements made throughout development.
-    </p>
+<p>
+  DragonZ is a game concept and application development project that demonstrates my experience with planning, design, testing, and presentation. The project includes a playable demonstration and a detailed slideshow documenting the development process, design decisions, obstacles encountered, and improvements made throughout production.
+</p>
 
-    <p>
-      This project provided valuable experience in project planning, iterative
-      design, problem-solving, and presenting technical work to an audience. The
-      accompanying slideshow highlights the evolution of the project from its
-      initial concept through multiple revisions and refinements.
-    </p>
-
-    <iframe
-      src="https://karanm517.github.io/DragonZ_InfyApp26a/"
-      title="DragonZ Project"
-      style="
-        width:100%;
-        height:700px;
-        border:none;
-        border-radius:12px;
-        background:white;
-      ">
-    </iframe>
+<iframe
+  src="https://karanm517.github.io/DragonZ_InfyApp26a/"
+  title="DragonZ Project"
+  style="width:100%; height:700px; border:none; border-radius:12px;">
+</iframe>
+```
 
   </section>
 
 </main>
+
+<footer class="resource-card">
+  <p>© <span id="year"></span> Karan Mehta</p>
+</footer>
+
+<script>
+document.getElementById("year").textContent =
+new Date().getFullYear();
+</script>
+
+</body>
+</html>
