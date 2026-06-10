@@ -31,19 +31,30 @@
 
 <main class="home-card">
 
-  <!-- INTRO -->
+  <!-- TOP SECTION (IMAGE + INTRO) -->
   <section class="resource-card">
 
-    <h2>Let’s Connect</h2>
+    <div class="contact-header">
 
-    <p>
-      I’m always open to feedback, collaboration, and discussions about game development, programming, and creative projects.
-      Whether it’s ideas, questions, or opportunities, feel free to reach out.
-    </p>
+      <div class="contact-image">
+        <img src="IMG_2.jpeg" alt="Profile Picture">
+      </div>
 
-    <p>
-      I work mainly with Python, HTML/CSS, and game development tools like Unity. I enjoy building interactive experiences and improving them through iteration.
-    </p>
+      <div class="contact-text">
+        <h2>Let’s Connect</h2>
+
+        <p>
+          I’m always open to feedback, collaboration, and conversations about game development,
+          programming, and design.
+        </p>
+
+        <p>
+          I enjoy building interactive projects and learning new tools like Unity, Python, and Figma.
+        </p>
+
+      </div>
+
+    </div>
 
   </section>
 
@@ -54,46 +65,26 @@
 
     <div class="contact-grid">
 
-      <!-- EMAIL -->
-      <div class="contact-card" onclick="navigator.clipboard.writeText('ksmehta517@gmail.com')">
+      <div class="contact-card"
+           onclick="navigator.clipboard.writeText('ksmehta517@gmail.com')">
         <h3>📧 Email</h3>
         <p>ksmehta517@gmail.com</p>
         <span>Click to copy</span>
       </div>
 
-      <!-- LINKEDIN -->
       <a class="contact-card" href="https://www.linkedin.com" target="_blank">
         <h3>💼 LinkedIn</h3>
         <p>View my profile</p>
         <span>Open profile</span>
       </a>
 
-      <!-- GITHUB (optional placeholder) -->
       <a class="contact-card" href="https://github.com" target="_blank">
         <h3>💻 GitHub</h3>
-        <p>Code projects & repositories</p>
+        <p>My coding projects</p>
         <span>View code</span>
       </a>
 
     </div>
-
-  </section>
-
-  <!-- EXTRA INFO -->
-  <section class="resource-card">
-
-    <h2>What I’m Working On</h2>
-
-    <ul>
-      <li>🎮 Game development projects using Unity</li>
-      <li>🐍 Python programming and simulations</li>
-      <li>🌐 Web development (HTML/CSS)</li>
-      <li>🧠 Improving problem-solving and design skills</li>
-    </ul>
-
-    <p style="margin-top:10px;">
-      I typically respond within 24–48 hours.
-    </p>
 
   </section>
 
@@ -104,7 +95,8 @@
 </footer>
 
 <script>
-document.getElementById("year").textContent = new Date().getFullYear();
+document.getElementById("year").textContent =
+new Date().getFullYear();
 </script>
 
 </body>
