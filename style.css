@@ -36,6 +36,26 @@ body {
   box-shadow: 0 4px 15px rgba(0,0,0,0.3);
 }
 
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-left img {
+  height: 42px;
+  width: auto;
+
+  border-radius: 10px;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+.navbar-left img:hover {
+  transform: scale(1.08);
+}
+
 .navbar-right {
   list-style: none;
   display: flex;
@@ -92,8 +112,13 @@ h4 {
   color: #60a5fa;
 }
 
+p {
+  line-height: 1.6;
+  color: #e2e8f0;
+}
+
 /* =========================
-   BIO
+   BIO SECTION
 ========================= */
 
 .bio {
@@ -104,46 +129,33 @@ h4 {
 }
 
 .bio-pic img {
-  width: 250px;
-  height: 250px;
+  width: 240px;
+  height: 240px;
 
   border-radius: 50%;
   object-fit: cover;
 
   border: 4px solid #3b82f6;
 
-  box-shadow: 0 0 25px rgba(59,130,246,0.4);
+  box-shadow: 0 0 25px rgba(59,130,246,0.35);
+}
+
+.bio-text {
+  margin-top: 1em;
 }
 
 /* =========================
-   PROJECTS
+   PROJECT LAYOUT (if used)
 ========================= */
 
-.project {
-  display: flex;
-  gap: 1.5em;
-}
-
 .project iframe {
-  flex: 2;
-  height: 450px;
+  width: 100%;
+  height: 500px;
+
   border: none;
-  border-radius: 10px;
-}
+  border-radius: 12px;
 
-.reflection {
-  flex: 1;
-
-  background: rgba(15, 23, 42, 0.7);
-
-  padding: 1em;
-  border-radius: 10px;
-
-  border: 1px solid rgba(96,165,250,0.2);
-}
-
-.reflection h3 {
-  color: #60a5fa;
+  background: white;
 }
 
 /* =========================
@@ -160,7 +172,7 @@ h4 {
   background: #2563eb;
   color: white;
 
-  padding: 1.5em;
+  padding: 1.3em;
   border-radius: 10px;
 
   text-decoration: none;
@@ -168,6 +180,8 @@ h4 {
   display: flex;
   justify-content: center;
   align-items: center;
+
+  font-weight: 500;
 
   transition: 0.25s ease;
 }
@@ -178,16 +192,11 @@ h4 {
 }
 
 /* =========================
-   CONTACT ICON
+   LISTS
 ========================= */
 
-.link-pic {
-  width: 80px;
-  height: 80px;
-
-  border-radius: 10px;
-
-  border: 2px solid #60a5fa;
+ul {
+  line-height: 1.8;
 }
 
 /* =========================
@@ -197,7 +206,7 @@ h4 {
 footer {
   text-align: center;
   color: #94a3b8;
-  padding: 1em;
+  padding: 1.2em;
 }
 
 /* =========================
@@ -205,11 +214,18 @@ footer {
 ========================= */
 
 @media (max-width: 900px) {
-  .project {
+  .navbar {
     flex-direction: column;
+    gap: 1em;
   }
 
-  .project iframe {
-    height: 350px;
+  .navbar-right {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .bio-pic img {
+    width: 200px;
+    height: 200px;
   }
 }
