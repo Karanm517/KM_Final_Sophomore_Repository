@@ -10,45 +10,45 @@ body {
   margin: 0;
   font-family: 'Montserrat', Arial, sans-serif;
 
-  background: linear-gradient(
-    135deg,
-    #0b1220,
-    #0f172a,
-    #111c3a
-  );
-
+  background: linear-gradient(135deg, #0b1220, #0f172a, #111c3a);
   color: #e2e8f0;
+
+  overflow-x: hidden;
 }
 
 /* =========================
-   NAVBAR
+   NAVBAR (FIXED + CENTERED)
 ========================= */
 
 .navbar {
   background: #1e3a8a;
 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   padding: 1em 2em;
 
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  position: relative;
 
   box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-
-  width: 100%;
 }
 
-/* LEFT LOGO */
+/* logo left pinned */
 .navbar-left {
+  position: absolute;
+  left: 2em;
   display: flex;
   align-items: center;
 }
 
 .navbar-left img {
-  height: 58px;
-  width: auto;
+  height: 52px;
+  width: 52px;
 
-  border-radius: 12px;
+  object-fit: contain;
+
+  border-radius: 10px;
 
   cursor: pointer;
 
@@ -59,22 +59,24 @@ body {
   transform: scale(1.08);
 }
 
-/* RIGHT LINKS */
+/* centered nav links */
 .navbar-right {
   list-style: none;
 
   display: flex;
-  gap: 1.5em;
+  gap: 2em;
 
   margin: 0;
   padding: 0;
 
   align-items: center;
+  justify-content: center;
 }
 
 .navbar-right a {
   color: #dbeafe;
   text-decoration: none;
+
   font-weight: 600;
 
   transition: 0.2s ease;
@@ -85,7 +87,7 @@ body {
 }
 
 /* =========================
-   LAYOUT
+   MAIN LAYOUT
 ========================= */
 
 .home-card {
@@ -123,11 +125,10 @@ h4 {
 
 p {
   line-height: 1.6;
-  color: #e2e8f0;
 }
 
 /* =========================
-   BIO SECTION
+   BIO
 ========================= */
 
 .bio {
@@ -147,10 +148,6 @@ p {
   border: 4px solid #3b82f6;
 
   box-shadow: 0 0 25px rgba(59,130,246,0.35);
-}
-
-.bio-text {
-  margin-top: 1em;
 }
 
 /* =========================
@@ -201,14 +198,6 @@ p {
 }
 
 /* =========================
-   LISTS
-========================= */
-
-ul {
-  line-height: 1.8;
-}
-
-/* =========================
    FOOTER
 ========================= */
 
@@ -228,9 +217,12 @@ footer {
     gap: 1em;
   }
 
+  .navbar-left {
+    position: static;
+  }
+
   .navbar-right {
     flex-wrap: wrap;
-    justify-content: center;
   }
 
   .bio-pic img {
