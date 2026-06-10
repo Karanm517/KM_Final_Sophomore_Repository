@@ -29,6 +29,8 @@ body {
 
 .navbar-left img {
   height: 55px;
+  width: auto;
+  object-fit: contain;
 }
 
 .navbar-right {
@@ -41,6 +43,7 @@ body {
   color: white;
   text-decoration: none;
   font-weight: 600;
+  transition: 0.2s ease;
 }
 
 .navbar-right a:hover {
@@ -48,7 +51,7 @@ body {
 }
 
 /* =========================
-   LAYOUT
+   PAGE LAYOUT
 ========================= */
 .home-card {
   max-width: 1200px;
@@ -65,10 +68,63 @@ body {
   padding: 1.5em;
   border-radius: 14px;
   border: 1px solid rgba(59,130,246,0.2);
+  box-shadow: 0 0 20px rgba(37, 99, 235, 0.1);
 }
 
 /* =========================
-   CONTACT HEADER (IMAGES)
+   HOMEPAGE BIO (RESTORED FIX)
+========================= */
+.bio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.bio-pic img {
+  width: 262.5px;
+  height: 262.5px;
+  border-radius: 50%;
+  border: 3px solid #3b82f6;
+  object-fit: cover;
+  box-shadow: 0 0 15px rgba(59,130,246,0.25);
+}
+
+.bio-text {
+  margin-top: 1em;
+}
+
+.bio-text h1 {
+  margin-bottom: 0.2em;
+}
+
+.bio-text h4 {
+  color: #93c5fd;
+  margin-top: 0;
+}
+
+/* =========================
+   PROJECT / IFRAME
+========================= */
+.project iframe,
+.resource-card iframe {
+  width: 100%;
+  height: 600px;
+  border: none;
+  border-radius: 12px;
+}
+
+/* =========================
+   CFU GRID
+========================= */
+.cfu-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5em;
+}
+
+/* =========================
+   CONTACT HEADER (3 IMAGES)
 ========================= */
 .contact-header {
   display: flex;
@@ -150,5 +206,9 @@ footer {
   .navbar-right {
     flex-wrap: wrap;
     justify-content: center;
+  }
+
+  .project iframe {
+    height: 400px;
   }
 }
