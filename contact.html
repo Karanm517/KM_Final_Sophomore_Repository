@@ -4,78 +4,108 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <meta name="description" content="Junior Fall Portfolio for Karan Mehta" />
-  <meta name="keywords" content="portfolio, junior, projects, programming, web development" />
-  <meta name="author" content="Karan Mehta" />
-
-  <title>Let's Connect | Karan Mehta Portfolio</title>
-
-  <!-- Main stylesheet -->
+  <title>Let's Connect | Karan Mehta</title>
   <link rel="stylesheet" href="style.css" />
-
-  <!-- Optional favicon (put your icon file in the same folder) -->
-  <link rel="icon" type="image/x-icon" href="favicon.png" />
-
-  <!-- Optional fonts (only keep if your CSS uses them) -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet" />
 </head>
 
 <body>
 
-  <!-- NAVBAR -->
-  <header>
-    <nav class="navbar">
-      <div class="navbar-left">
-  <a href="index.html">
-    <img src="Untitled design (2).png" alt="Game Controller Logo" />
-  </a>
-</div>
+<header>
+  <nav class="navbar">
 
-      <ul class="navbar-right">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="cfus.html">CFUs</a></li>
-        <li><a href="contact.html">Let's Connect</a></li>
-      </ul>
-    </nav>
-  </header>
+    <div class="navbar-left">
+      <a href="index.html">
+        <img src="Untitled design (2).png" alt="Logo">
+      </a>
+    </div>
 
-  <!-- MAIN CONTENT -->
-  <main class="home-card">
+    <ul class="navbar-right">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="cfus.html">CFUs</a></li>
+      <li><a href="contact.html">Let's Connect</a></li>
+    </ul>
 
-    <!-- LETS CONNECT SECTION -->
-    <section class="resource-card">
-      <h2>Let's Connect!</h2>
-      <p>Feel free to reach out! I'd love to hear from you about projects, questions, or just to chat about programming. Here are the best ways to get in touch with me:</p>
+  </nav>
+</header>
 
-      <div class="skill-images">
-        <!-- Email -->
-        <div class="email-text">
-          ksmehta517@gmail.com
-        </div>
+<main class="home-card">
 
-        <!-- LinkedIn (or other) -->
-        <a href="https://www.linkedin.com/in/karan-mehta-9a3722397?utm_source=share_via&utm_content=profile&utm_medium=member_ios" target="_blank" rel="noopener">
-          <div class="picture">
-            <img class="link-pic" src="download.png" alt="LinkedIn" />
-          </div>
-        </a>
+  <!-- INTRO -->
+  <section class="resource-card">
+
+    <h2>Let’s Connect</h2>
+
+    <p>
+      I’m always open to feedback, collaboration, and discussions about game development, programming, and creative projects.
+      Whether it’s ideas, questions, or opportunities, feel free to reach out.
+    </p>
+
+    <p>
+      I work mainly with Python, HTML/CSS, and game development tools like Unity. I enjoy building interactive experiences and improving them through iteration.
+    </p>
+
+  </section>
+
+  <!-- CONTACT CARDS -->
+  <section class="resource-card">
+
+    <h2>Contact Options</h2>
+
+    <div class="contact-grid">
+
+      <!-- EMAIL -->
+      <div class="contact-card" onclick="navigator.clipboard.writeText('ksmehta517@gmail.com')">
+        <h3>📧 Email</h3>
+        <p>ksmehta517@gmail.com</p>
+        <span>Click to copy</span>
       </div>
-    </section>
 
-  </main>
+      <!-- LINKEDIN -->
+      <a class="contact-card" href="https://www.linkedin.com" target="_blank">
+        <h3>💼 LinkedIn</h3>
+        <p>View my profile</p>
+        <span>Open profile</span>
+      </a>
 
-  <!-- FOOTER -->
-  <footer class="resource-card">
-    <p>© <span id="year"></span> Karan Mehta | Junior Fall Portfolio</p>
-  </footer>
+      <!-- GITHUB (optional placeholder) -->
+      <a class="contact-card" href="https://github.com" target="_blank">
+        <h3>💻 GitHub</h3>
+        <p>Code projects & repositories</p>
+        <span>View code</span>
+      </a>
 
-  <script>
-    // Auto-updates the year in the footer
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
+    </div>
+
+  </section>
+
+  <!-- EXTRA INFO -->
+  <section class="resource-card">
+
+    <h2>What I’m Working On</h2>
+
+    <ul>
+      <li>🎮 Game development projects using Unity</li>
+      <li>🐍 Python programming and simulations</li>
+      <li>🌐 Web development (HTML/CSS)</li>
+      <li>🧠 Improving problem-solving and design skills</li>
+    </ul>
+
+    <p style="margin-top:10px;">
+      I typically respond within 24–48 hours.
+    </p>
+
+  </section>
+
+</main>
+
+<footer class="resource-card">
+  <p>© <span id="year"></span> Karan Mehta</p>
+</footer>
+
+<script>
+document.getElementById("year").textContent = new Date().getFullYear();
+</script>
 
 </body>
 </html>
