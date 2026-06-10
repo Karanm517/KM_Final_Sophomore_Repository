@@ -34,18 +34,21 @@ body {
   align-items: center;
 
   box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+
+  width: 100%;
 }
 
+/* LEFT LOGO */
 .navbar-left {
   display: flex;
   align-items: center;
 }
 
 .navbar-left img {
-  height: 42px;
+  height: 58px;
   width: auto;
 
-  border-radius: 10px;
+  border-radius: 12px;
 
   cursor: pointer;
 
@@ -56,18 +59,24 @@ body {
   transform: scale(1.08);
 }
 
+/* RIGHT LINKS */
 .navbar-right {
   list-style: none;
+
   display: flex;
-  gap: 2em;
+  gap: 1.5em;
+
   margin: 0;
   padding: 0;
+
+  align-items: center;
 }
 
 .navbar-right a {
   color: #dbeafe;
   text-decoration: none;
   font-weight: 600;
+
   transition: 0.2s ease;
 }
 
@@ -145,7 +154,7 @@ p {
 }
 
 /* =========================
-   PROJECT LAYOUT (if used)
+   PROJECT IFRAME
 ========================= */
 
 .project iframe {
