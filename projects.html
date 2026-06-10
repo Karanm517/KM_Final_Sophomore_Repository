@@ -10,16 +10,8 @@
 
   <title>Projects | Karan Mehta Portfolio</title>
 
-  <!-- Main stylesheet -->
   <link rel="stylesheet" href="style.css" />
-
-  <!-- Optional favicon (put your icon file in the same folder) -->
   <link rel="icon" type="image/x-icon" href="favicon.png" />
-
-  <!-- Optional fonts (only keep if your CSS uses them) -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet" />
 </head>
 
 <body>
@@ -28,8 +20,7 @@
   <header>
     <nav class="navbar">
       <div class="navbar-left">
-        <!-- Replace logo.png with your own image file -->
-        <img src="file-pokeball-png-0.png" alt="Cartoon Character Logo" />
+        <img src="file-pokeball-png-0.png" alt="Logo" />
       </div>
 
       <ul class="navbar-right">
@@ -41,60 +32,41 @@
     </nav>
   </header>
 
-  <!-- MAIN CONTENT -->
+  <!-- PROJECTS ONLY -->
   <main class="home-card">
 
-    <!-- PROJECTS SECTION TITLE -->
     <section class="resource-card">
-      <h2>Projects</h2>
-      <p>Click on any project to interact with it:</p>
+
+      <div class="project">
+        <iframe src="https://py3.codeskulptor.org/#user310_XbHB4G59cX_1.py"></iframe>
+      </div>
+
     </section>
 
-    <!-- PROJECT 1 -->
     <section class="resource-card">
-      <div class="project">
-        <iframe src="https://py3.codeskulptor.org/#user310_XbHB4G59cX_1.py" title="Project 1"></iframe>
 
-        <div class="reflection">
-          <h3>Python Project 1</h3>
-          <p>Click the preview above to view and interact with the project.</p>
-        </div>
+      <div class="project">
+        <iframe src="https://earsketch.gatech.edu/earsketch2/?sharing=Tp-ZmrgSIsp_XZxsKTulaw"></iframe>
       </div>
+
     </section>
 
-    <!-- PROJECT 2 -->
     <section class="resource-card">
+
       <div class="project">
-        <iframe src="https://earsketch.gatech.edu/earsketch2/?sharing=Tp-ZmrgSIsp_XZxsKTulaw" title="Project 2"></iframe>
-
-        <div class="reflection">
-          <h3>EarSketch Project 1</h3>
-          <p>Click the preview above to view and interact with the project.</p>
-        </div>
+        <iframe src="https://earsketch.gatech.edu/earsketch2/?sharing=qGHSLSsiAIi8gaaEfDN4rw"></iframe>
       </div>
-    </section>
 
-    <!-- PROJECT 3 -->
-    <section class="resource-card">
-      <div class="project">
-        <iframe src="https://earsketch.gatech.edu/earsketch2/?sharing=qGHSLSsiAIi8gaaEfDN4rw" title="Project 3"></iframe>
-
-        <div class="reflection">
-          <h3>EarSketch Project 2</h3>
-          <p>Click the preview above to view and interact with the project.</p>
-        </div>
-      </div>
     </section>
 
   </main>
 
   <!-- FOOTER -->
   <footer class="resource-card">
-    <p>© <span id="year"></span> Karan Mehta | Junior Fall Portfolio</p>
+    <p>© <span id="year"></span> Karan Mehta</p>
   </footer>
 
   <script>
-    // Auto-updates the year in the footer
     document.getElementById("year").textContent = new Date().getFullYear();
   </script>
 
