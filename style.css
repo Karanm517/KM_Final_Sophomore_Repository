@@ -1,3 +1,4 @@
+
 /* =========================
    GLOBAL
 ========================= */
@@ -9,8 +10,8 @@
 
 body {
   font-family: 'Montserrat', Arial, sans-serif;
-  background-color: #0f172a;
-  color: #e5e7eb;
+  background-color: #120d1f;
+  color: #f5f3ff;
   background-image: url("background brown swirl.jpeg");
   background-size: cover;
   background-attachment: fixed;
@@ -20,7 +21,7 @@ body {
    NAVBAR
 ========================= */
 .navbar {
-  background: linear-gradient(90deg, #1e3a8a, #2563eb);
+  background: linear-gradient(90deg, #581c87, #a21caf, #db2777);
   padding: 1em 2em;
   display: flex;
   justify-content: space-between;
@@ -47,7 +48,7 @@ body {
 }
 
 .navbar-right a:hover {
-  color: #93c5fd;
+  color: #67e8f9;
 }
 
 /* =========================
@@ -63,16 +64,26 @@ body {
    CARDS
 ========================= */
 .resource-card {
-  background: rgba(15, 23, 42, 0.85);
+  background: rgba(24, 15, 39, 0.90);
   margin: 2em auto;
   padding: 1.5em;
   border-radius: 14px;
-  border: 1px solid rgba(59,130,246,0.2);
-  box-shadow: 0 0 20px rgba(37, 99, 235, 0.1);
+  border: 1px solid rgba(192, 132, 252, 0.3);
+  box-shadow: 0 0 20px rgba(168, 85, 247, 0.15);
+}
+
+.resource-card h1,
+.resource-card h2,
+.resource-card h3 {
+  color: #e879f9;
+}
+
+.resource-card p {
+  line-height: 1.6;
 }
 
 /* =========================
-   HOMEPAGE BIO (RESTORED FIX)
+   HOMEPAGE BIO
 ========================= */
 .bio {
   display: flex;
@@ -85,9 +96,9 @@ body {
   width: 262.5px;
   height: 262.5px;
   border-radius: 50%;
-  border: 3px solid #3b82f6;
+  border: 3px solid #d946ef;
   object-fit: cover;
-  box-shadow: 0 0 15px rgba(59,130,246,0.25);
+  box-shadow: 0 0 20px rgba(217, 70, 239, 0.35);
 }
 
 .bio-text {
@@ -96,10 +107,11 @@ body {
 
 .bio-text h1 {
   margin-bottom: 0.2em;
+  color: #f0abfc;
 }
 
 .bio-text h4 {
-  color: #93c5fd;
+  color: #67e8f9;
   margin-top: 0;
 }
 
@@ -139,8 +151,8 @@ body {
   height: 140px;
   object-fit: cover;
   border-radius: 14px;
-  border: 2px solid #3b82f6;
-  box-shadow: 0 0 12px rgba(59,130,246,0.25);
+  border: 2px solid #d946ef;
+  box-shadow: 0 0 15px rgba(217, 70, 239, 0.3);
   transition: transform 0.2s ease;
 }
 
@@ -151,6 +163,10 @@ body {
 .contact-text {
   flex: 1;
   min-width: 250px;
+}
+
+.contact-text h2 {
+  color: #e879f9;
 }
 
 /* =========================
@@ -164,11 +180,15 @@ body {
 }
 
 .contact-card {
-  background: rgba(37, 99, 235, 0.15);
-  border: 1px solid rgba(59, 130, 246, 0.4);
+  background: linear-gradient(
+    135deg,
+    rgba(147, 51, 234, 0.2),
+    rgba(219, 39, 119, 0.15)
+  );
+  border: 1px solid rgba(192, 132, 252, 0.4);
   padding: 1.2em;
   border-radius: 12px;
-  color: #e5e7eb;
+  color: #f5f3ff;
   text-decoration: none;
   cursor: pointer;
   transition: 0.25s ease;
@@ -176,13 +196,22 @@ body {
 
 .contact-card:hover {
   transform: translateY(-6px);
-  background: rgba(37, 99, 235, 0.25);
-  border-color: #60a5fa;
+  background: linear-gradient(
+    135deg,
+    rgba(168, 85, 247, 0.35),
+    rgba(236, 72, 153, 0.3)
+  );
+  border-color: #67e8f9;
+  box-shadow: 0 0 15px rgba(217, 70, 239, 0.2);
 }
 
 .contact-card h3 {
-  color: #93c5fd;
+  color: #67e8f9;
   margin-bottom: 0.5em;
+}
+
+.contact-card span {
+  color: #e879f9;
 }
 
 /* =========================
@@ -191,7 +220,7 @@ body {
 footer {
   text-align: center;
   padding: 1em;
-  color: #93c5fd;
+  color: #67e8f9;
 }
 
 /* =========================
