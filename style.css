@@ -104,25 +104,23 @@ body {
   margin: 0 auto;
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 
 .bio-pic img {
   display: block;
   width: 100%;
-  height: auto;
-  aspect-ratio: 16 / 9;
-  object-fit: contain;
+  height: 280px;
+  object-fit: cover;
   object-position: center;
-  border-radius: 18px;
   border: 3px solid #9333ea;
-  box-shadow: 0 0 15px rgba(147, 51, 234, 0.25);
+  border-radius: 15px;
+  box-shadow: 0 0 12px rgba(147, 51, 234, 0.25);
   transition: 0.3s ease;
 }
 
 .bio-pic img:hover {
-  transform: scale(1.03);
-  box-shadow: 0 0 25px rgba(192, 132, 252, 0.4);
+  transform: scale(1.02);
+  box-shadow: 0 0 20px rgba(192, 132, 252, 0.4);
 }
 
 .bio-text {
@@ -264,5 +262,9 @@ footer {
   .bio-pic {
     width: 100%;
     max-width: 400px;
+  }
+
+  .bio-pic img {
+    height: 225px;
   }
 }
