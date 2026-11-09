@@ -99,17 +99,18 @@ body {
 }
 
 .bio-pic img {
-  width: 262.5px;
-  height: 262.5px;
-  border-radius: 50%;
+  width: 280px;
+  height: 350px;
+  border-radius: 18px;
   border: 3px solid #9333ea;
   object-fit: cover;
+  object-position: center;
   box-shadow: 0 0 20px rgba(147, 51, 234, 0.35);
   transition: 0.3s ease;
 }
 
 .bio-pic img:hover {
-  transform: scale(1.04);
+  transform: scale(1.03);
   box-shadow: 0 0 30px rgba(192, 132, 252, 0.5);
 }
 
@@ -247,5 +248,10 @@ footer {
 
   .project iframe {
     height: 400px;
+  }
+
+  .bio-pic img {
+    width: 220px;
+    height: 280px;
   }
 }
