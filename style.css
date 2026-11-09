@@ -99,8 +99,8 @@ body {
 }
 
 .bio-pic img {
-  width: 280px;
-  height: 350px;
+  width: 450px;
+  height: 280px;
   border-radius: 18px;
   border: 3px solid #9333ea;
   object-fit: cover;
@@ -251,7 +251,8 @@ footer {
   }
 
   .bio-pic img {
-    width: 220px;
-    height: 280px;
+    width: 100%;
+    max-width: 350px;
+    height: 220px;
   }
 }
