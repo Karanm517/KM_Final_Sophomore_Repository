@@ -6,6 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <title>Karan Mehta | Portfolio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css" />
 </head>
 
@@ -13,7 +18,6 @@
 
 <header>
   <nav class="navbar">
-
     <div class="navbar-left">
       <a href="index.html">
         <img src="Untitled design (2).png" alt="Logo">
@@ -21,45 +25,207 @@
     </div>
 
     <ul class="navbar-right">
-      <li><a href="index.html">Home</a></li>
+      <li><a href="index.html" class="active">Home</a></li>
       <li><a href="projects.html">Projects</a></li>
       <li><a href="cfus.html">CFUs</a></li>
       <li><a href="contact.html">Let's Connect</a></li>
     </ul>
-
   </nav>
 </header>
 
 <main class="home-card">
 
-  <!-- BIO -->
-  <section class="resource-card">
-    <div class="bio">
+  <!-- HERO SECTION -->
+  <section class="hero-section">
 
+    <div class="hero-image">
+      <div class="image-glow"></div>
       <div class="bio-pic">
-        <img src="IMG_4974.jpeg" alt="Profile">
+        <img src="IMG_4974.jpeg" alt="Karan Mehta presenting a project">
       </div>
-
-      <div class="bio-text">
-        <h1>Karan Mehta</h1>
-        <h4>Student Developer • Game Designer</h4>
-
-        <p>
-          I am a junior passionate about programming, game design, and interactive media. I enjoy building projects and improving them through iteration and testing.
-        </p>
-
+      <div class="image-caption">
+        <span class="status-dot"></span>
+        Always building something new
       </div>
     </div>
+
+    <div class="hero-content">
+
+      <div class="eyebrow">
+        <span class="eyebrow-line"></span>
+        MY PERSONAL PORTFOLIO
+      </div>
+
+      <h1 class="hero-name">Karan <span>Mehta.</span></h1>
+
+      <h2 class="hero-role">
+        Student Developer <span>|</span> Game Designer
+      </h2>
+
+      <p class="hero-description">
+        I'm a junior passionate about programming, game design, and interactive media. I enjoy turning ideas into projects, experimenting with new technologies, and finding creative ways to solve problems.
+      </p>
+
+      <div class="hero-tags">
+        <span>Programming</span>
+        <span>Game Development</span>
+        <span>Creative Design</span>
+        <span>Problem Solving</span>
+      </div>
+
+      <div class="hero-buttons">
+        <a href="projects.html" class="primary-button">
+          Explore My Projects <span>↗</span>
+        </a>
+
+        <a href="contact.html" class="secondary-button">
+          Get In Touch
+        </a>
+      </div>
+
+    </div>
+
+    <div class="hero-decoration decoration-one"></div>
+    <div class="hero-decoration decoration-two"></div>
+
+  </section>
+
+
+  <!-- ABOUT SECTION -->
+  <section class="about-section">
+
+    <div class="section-heading">
+      <span class="section-label">01 / INTRODUCTION</span>
+      <h2>A little about <span>me.</span></h2>
+      <p>More than just code — here's what drives my creativity.</p>
+    </div>
+
+    <div class="about-card">
+      <div class="about-icon">✦</div>
+
+      <div class="about-content">
+        <h3>Creating, Learning, Improving.</h3>
+
+        <p>
+          I enjoy the process of taking an idea and turning it into something people can interact with. Whether I'm designing a game, working on a programming project, or experimenting with new ideas, I focus on creativity, problem-solving, and continuous improvement.
+        </p>
+
+        <p>
+          I'm always looking for opportunities to develop my skills, explore new technologies, and take on projects that challenge me.
+        </p>
+      </div>
+    </div>
+
+  </section>
+
+
+  <!-- INTERESTS SECTION -->
+  <section class="interests-section">
+
+    <div class="section-heading">
+      <span class="section-label">02 / WHAT I ENJOY</span>
+      <h2>Things I'm <span>into.</span></h2>
+      <p>The areas that inspire the projects I create.</p>
+    </div>
+
+    <div class="interest-grid">
+
+      <div class="interest-card">
+        <div class="interest-number">01</div>
+        <div class="interest-icon">⌨</div>
+        <h3>Programming</h3>
+        <p>
+          Writing code, exploring new concepts, and bringing creative ideas to life through technology.
+        </p>
+        <div class="interest-line"></div>
+      </div>
+
+      <div class="interest-card">
+        <div class="interest-number">02</div>
+        <div class="interest-icon">🎮</div>
+        <h3>Game Design</h3>
+        <p>
+          Exploring game mechanics, interactive experiences, and the creativity behind game development.
+        </p>
+        <div class="interest-line"></div>
+      </div>
+
+      <div class="interest-card">
+        <div class="interest-number">03</div>
+        <div class="interest-icon">✧</div>
+        <h3>Creative Thinking</h3>
+        <p>
+          Experimenting with ideas, improving designs, and finding different ways to approach challenges.
+        </p>
+        <div class="interest-line"></div>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- CURRENT FOCUS -->
+  <section class="focus-section">
+
+    <div class="focus-card">
+      <div class="focus-left">
+        <span class="section-label">03 / CURRENT FOCUS</span>
+        <h2>Always learning.<br><span>Always creating.</span></h2>
+        <p>
+          My goal is to keep growing as a developer by building projects, learning new skills, and challenging myself with new ideas.
+        </p>
+      </div>
+
+      <div class="focus-right">
+        <div class="focus-item">
+          <span class="focus-check">✓</span>
+          <span>Building new projects</span>
+        </div>
+
+        <div class="focus-item">
+          <span class="focus-check">✓</span>
+          <span>Improving programming skills</span>
+        </div>
+
+        <div class="focus-item">
+          <span class="focus-check">✓</span>
+          <span>Exploring game development</span>
+        </div>
+
+        <div class="focus-item">
+          <span class="focus-check">✓</span>
+          <span>Learning through experimentation</span>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
+  <!-- FINAL CALL TO ACTION -->
+  <section class="connect-section">
+    <span class="section-label">04 / LET'S CONNECT</span>
+    <h2>Have an idea? Let's <span>make it happen.</span></h2>
+    <p>Feel free to check out my work or get in touch.</p>
+
+    <a href="contact.html" class="primary-button">
+      Contact Me <span>↗</span>
+    </a>
   </section>
 
 </main>
 
-<footer class="resource-card">
-  <p>© <span id="year"></span> Karan Mehta</p>
+
+<footer class="site-footer">
+  <div class="footer-line"></div>
+  <p>Designed & Built by <span>Karan Mehta</span></p>
+  <p class="footer-small">© <span id="year"></span> All Rights Reserved.</p>
 </footer>
 
+
 <script>
-document.getElementById("year").textContent = new Date().getFullYear();
+  document.getElementById("year").textContent = new Date().getFullYear();
 </script>
 
 </body>
