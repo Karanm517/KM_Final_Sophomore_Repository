@@ -6,21 +6,17 @@
 
 body {
   font-family: Arial, sans-serif;
-  background-color: #f2f2f2;
-  color: #222;
+  background-color: #1a0f2e;
+  color: #e8e0f5;
   line-height: 1.5;
 }
 
 .navbar {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
-  padding: 15px 40px;
-  background-color: #333;
-}
-
-.navbar-left img {
-  height: 45px;
+  padding: 20px 40px;
+  background-color: #2a1647;
 }
 
 .navbar-right {
@@ -33,7 +29,7 @@ body {
 }
 
 .navbar-right a {
-  color: white;
+  color: #e8e0f5;
   text-decoration: none;
 }
 
@@ -43,6 +39,7 @@ body {
 
 .navbar-right a.active {
   font-weight: bold;
+  color: #c9a8f5;
 }
 
 .home-card {
@@ -54,8 +51,8 @@ body {
 .hero-section {
   display: flex;
   align-items: center;
-  background-color: white;
-  border: 1px solid #ccc;
+  background-color: #2d1a4d;
+  border: 1px solid #4a2f78;
   padding: 40px;
 }
 
@@ -72,7 +69,7 @@ body {
 .image-caption {
   margin-top: 8px;
   font-size: 14px;
-  color: #666;
+  color: #b9a6d6;
 }
 
 .hero-content {
@@ -81,7 +78,7 @@ body {
 }
 
 .eyebrow {
-  color: #666;
+  color: #b9a6d6;
   font-size: 14px;
 }
 
@@ -92,13 +89,13 @@ body {
 
 .hero-role {
   font-size: 18px;
-  color: #444;
+  color: #d4c4ee;
   font-weight: normal;
   margin-bottom: 15px;
 }
 
 .hero-description {
-  color: #444;
+  color: #d4c4ee;
 }
 
 .hero-tags {
@@ -107,7 +104,7 @@ body {
 
 .hero-tags span {
   display: inline-block;
-  border: 1px solid #aaa;
+  border: 1px solid #6b4a9e;
   padding: 4px 10px;
   font-size: 14px;
   margin: 0 6px 6px 0;
@@ -119,7 +116,7 @@ body {
 
 .primary-button {
   display: inline-block;
-  background-color: #333;
+  background-color: #7b4fc4;
   color: white;
   padding: 10px 20px;
   text-decoration: none;
@@ -127,26 +124,26 @@ body {
 }
 
 .primary-button:hover {
-  background-color: #555;
+  background-color: #9366de;
 }
 
 .secondary-button {
   display: inline-block;
-  border: 1px solid #333;
-  color: #333;
+  border: 1px solid #7b4fc4;
+  color: #e8e0f5;
   padding: 10px 20px;
   text-decoration: none;
 }
 
 .secondary-button:hover {
-  background-color: #eee;
+  background-color: #3d2563;
 }
 
 .site-footer {
   text-align: center;
   padding: 25px;
   margin-top: 40px;
-  color: #555;
+  color: #b9a6d6;
 }
 
 .footer-small {
@@ -154,8 +151,8 @@ body {
 }
 
 .resource-card {
-  background-color: white;
-  border: 1px solid #ccc;
+  background-color: #2d1a4d;
+  border: 1px solid #4a2f78;
   padding: 20px;
   margin: 25px auto;
 }
@@ -191,24 +188,20 @@ body {
 }
 
 .contact-card {
-  background-color: white;
-  border: 1px solid #ccc;
+  background-color: #2d1a4d;
+  border: 1px solid #4a2f78;
   padding: 18px;
-  color: #222;
+  color: #e8e0f5;
   text-decoration: none;
 }
 
 .contact-card:hover {
-  background-color: #eee;
+  background-color: #3d2563;
 }
 
 @media (max-width: 800px) {
   .navbar {
-    flex-direction: column;
-  }
-
-  .navbar-right {
-    margin-top: 12px;
+    justify-content: center;
   }
 
   .hero-section {
