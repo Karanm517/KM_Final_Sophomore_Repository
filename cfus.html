@@ -2,11 +2,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CFUs | Karan Mehta Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -24,20 +23,98 @@
 
 <main class="home-card">
 
-  <section class="resource-card">
-    <h2>CFU Showcase</h2>
-    <p>My CodeSkulptor exercises and programming work.</p>
+  <section class="resource-card cfu-intro">
+    <p class="cfu-eyebrow">PROGRAMMING WORK</p>
+    <h1>CFU Showcase<span>.</span></h1>
+    <p>
+      Explore my Python programming exercises below.
+      Each project is embedded so you can view and interact
+      with the code directly on this page.
+    </p>
+  </section>
+
+  <!-- CFU 1 -->
+  <section class="cfu-project">
+    <div class="cfu-project-heading">
+      <span>01</span>
+      <h2>CFU 01</h2>
+    </div>
+
+    <iframe
+      src="https://py3.codeskulptor.org/#user310_XbHB4G59cX_1.py"
+      title="CFU 01 CodeSkulptor"
+      loading="lazy">
+    </iframe>
+  </section>
+
+  <!-- CFU 2 -->
+  <section class="cfu-project">
+    <div class="cfu-project-heading">
+      <span>02</span>
+      <h2>CFU 02</h2>
+    </div>
+
+    <iframe
+      src="https://py3.codeskulptor.org/#user310_E8auAMSjrnc3ZNa.py"
+      title="CFU 02 CodeSkulptor"
+      loading="lazy">
+    </iframe>
+  </section>
+
+  <!-- CFU 3 -->
+  <section class="cfu-project">
+    <div class="cfu-project-heading">
+      <span>03</span>
+      <h2>CFU 03</h2>
+    </div>
+
+    <iframe
+      src="https://py3.codeskulptor.org/#user310_EXlyXDR5KW1ssUX.py"
+      title="CFU 03 CodeSkulptor"
+      loading="lazy">
+    </iframe>
+  </section>
+
+  <!-- CFU 4 -->
+  <section class="cfu-project">
+    <div class="cfu-project-heading">
+      <span>04</span>
+      <h2>CFU 04</h2>
+    </div>
+
+    <iframe
+      src="https://py3.codeskulptor.org/#user310_NRJDJ5P96SHRnbJ_2.py"
+      title="CFU 04 CodeSkulptor"
+      loading="lazy">
+    </iframe>
+  </section>
+
+  <!-- CFU 5 -->
+  <section class="cfu-project">
+    <div class="cfu-project-heading">
+      <span>05</span>
+      <h2>CFU 05</h2>
+    </div>
+
+    <iframe
+      src="https://py3.codeskulptor.org/#user310_vYrHZP4iOh_2.py"
+      title="CFU 05 CodeSkulptor"
+      loading="lazy">
+    </iframe>
   </section>
 
 </main>
 
-<footer class="resource-card">
-  <p>© <span id="year"></span> Karan Mehta</p>
+<footer class="site-footer">
+  <p>Made by Karan Mehta</p>
+  <p class="footer-small">
+    © <span id="year"></span> All Rights Reserved.
+  </p>
 </footer>
 
 <script>
-document.getElementById("year").textContent =
-new Date().getFullYear();
+  document.getElementById("year").textContent =
+    new Date().getFullYear();
 </script>
 
 </body>
