@@ -1,6 +1,32 @@
 
 /* =========================================
-   GENERAL STYLING
+   FONTS
+========================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Rajdhani:wght@500;600;700&family=Space+Mono:wght@400;700&display=swap');
+
+
+/* =========================================
+   COLOR VARIABLES
+========================================= */
+
+:root {
+  --background: #160F13;
+  --surface: #26151C;
+  --surface-light: #351C26;
+  --border: #59303C;
+
+  --red: #C62845;
+  --red-bright: #F04455;
+  --red-hover: #FF5365;
+
+  --text: #F0E8EA;
+  --text-muted: #BBAAB0;
+}
+
+
+/* =========================================
+   GENERAL
 ========================================= */
 
 * {
@@ -9,60 +35,107 @@
   box-sizing: border-box;
 }
 
-body {
-  font-family: Arial, sans-serif;
-  background-color: #1a0f2e;
-  color: #e8e0f5;
-  line-height: 1.5;
+html {
+  scroll-behavior: smooth;
 }
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--background);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+p {
+  font-family: 'Inter', sans-serif;
+}
+
+a {
+  transition: 0.2s ease;
+}
+
+
+/* =========================================
+   NAVIGATION
+========================================= */
 
 .navbar {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  padding: 20px 40px;
-  background-color: #2a1647;
+  padding: 22px 5%;
+  background-color: #1C1116;
+  border-bottom: 1px solid var(--border);
 }
 
 .navbar-right {
   display: flex;
   list-style: none;
+  gap: 30px;
 }
 
 .navbar-right li {
-  margin-left: 25px;
+  margin-left: 0;
 }
 
 .navbar-right a {
-  color: #e8e0f5;
+  color: var(--text-muted);
   text-decoration: none;
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 600;
+  font-size: 17px;
 }
 
 .navbar-right a:hover {
-  text-decoration: underline;
+  color: var(--red-bright);
 }
 
 .navbar-right a.active {
-  font-weight: bold;
-  color: #c9a8f5;
+  color: var(--red-bright);
+  font-weight: 700;
 }
 
+
 /* =========================================
-   HOME PAGE
+   MAIN CONTAINER
 ========================================= */
 
 .home-card {
   width: 90%;
   max-width: 1200px;
-  margin: 40px auto;
+  margin: 50px auto;
 }
+
+
+/* =========================================
+   HOMEPAGE HERO
+========================================= */
 
 .hero-section {
   display: flex;
   align-items: center;
-  background-color: #2d1a4d;
-  border: 1px solid #4a2f78;
-  padding: 40px;
+  background-color: var(--surface);
+  border: 1px solid var(--border);
+  padding: 45px;
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 5px;
+  height: 100%;
+  background-color: var(--red);
 }
 
 .hero-image {
@@ -73,12 +146,13 @@ body {
 .hero-image img {
   max-width: 100%;
   max-height: 350px;
+  border-radius: 6px;
 }
 
 .image-caption {
   margin-top: 8px;
-  font-size: 14px;
-  color: #b9a6d6;
+  font-size: 13px;
+  color: var(--text-muted);
 }
 
 .hero-content {
@@ -87,94 +161,119 @@ body {
 }
 
 .eyebrow {
-  color: #b9a6d6;
-  font-size: 14px;
+  color: var(--red-bright);
+  font-family: 'Space Mono', monospace;
+  font-size: 13px;
+  letter-spacing: 2px;
 }
 
 .hero-name {
-  font-size: 48px;
-  margin: 5px 0;
+  font-size: 54px;
+  margin: 8px 0;
+  letter-spacing: -1px;
 }
 
 .hero-role {
-  font-size: 18px;
-  color: #d4c4ee;
-  font-weight: normal;
-  margin-bottom: 15px;
+  font-size: 20px;
+  color: var(--red-bright);
+  font-weight: 600;
+  margin-bottom: 18px;
 }
 
 .hero-description {
-  color: #d4c4ee;
+  color: var(--text-muted);
+  line-height: 1.8;
 }
 
 .hero-tags {
-  margin-top: 15px;
+  margin-top: 20px;
 }
 
 .hero-tags span {
   display: inline-block;
-  border: 1px solid #6b4a9e;
-  padding: 4px 10px;
-  font-size: 14px;
-  margin: 0 6px 6px 0;
+  border: 1px solid var(--border);
+  background-color: var(--surface-light);
+  color: var(--text);
+  padding: 6px 12px;
+  font-size: 13px;
+  border-radius: 4px;
+  margin: 0 6px 8px 0;
 }
 
+
+/* =========================================
+   BUTTONS
+========================================= */
+
 .hero-buttons {
-  margin-top: 20px;
+  margin-top: 25px;
 }
 
 .primary-button {
   display: inline-block;
-  background-color: #7b4fc4;
+  background-color: var(--red);
   color: white;
-  padding: 10px 20px;
+  font-weight: 700;
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 17px;
+  padding: 11px 22px;
   text-decoration: none;
   margin-right: 10px;
+  border-radius: 4px;
 }
 
 .primary-button:hover {
-  background-color: #9366de;
+  background-color: var(--red-hover);
+  transform: translateY(-2px);
 }
 
 .secondary-button {
   display: inline-block;
-  border: 1px solid #7b4fc4;
-  color: #e8e0f5;
-  padding: 10px 20px;
+  border: 1px solid var(--red);
+  color: var(--red-bright);
+  padding: 10px 22px;
   text-decoration: none;
+  border-radius: 4px;
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 700;
+  font-size: 17px;
 }
 
 .secondary-button:hover {
-  background-color: #3d2563;
+  background-color: var(--red);
+  color: white;
 }
 
+
 /* =========================================
-   FEATURED PROJECTS ON HOME PAGE
+   FEATURED PROJECTS
 ========================================= */
 
 .featured-projects {
-  margin-top: 45px;
+  margin-top: 55px;
 }
 
 .featured-heading {
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 
 .featured-heading h2 {
-  font-size: 28px;
+  font-size: 32px;
 }
 
 .featured-heading p {
-  color: #b9a6d6;
+  color: var(--text-muted);
+  margin-top: 5px;
 }
 
 .project-preview {
   display: flex;
   flex-direction: column;
-  background-color: #2d1a4d;
-  border: 1px solid #4a2f78;
-  padding: 25px;
+  background-color: var(--surface);
+  border: 1px solid var(--border);
+  padding: 28px;
   margin-bottom: 30px;
+  border-radius: 8px;
 }
 
 .project-info {
@@ -182,30 +281,32 @@ body {
 }
 
 .project-info h2 {
-  font-size: 25px;
-  margin-bottom: 8px;
+  font-size: 28px;
+  margin-bottom: 10px;
 }
 
 .project-info p {
-  color: #d4c4ee;
+  color: var(--text-muted);
   margin-bottom: 12px;
 }
 
 .prototype-link {
   display: inline-block;
-  color: #c9a8f5;
+  color: var(--red-bright);
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 600;
 }
 
 .prototype-link:hover {
-  text-decoration: underline;
+  color: var(--red-hover);
 }
 
 .prototype-frame {
   width: 100%;
   height: 650px;
-  border: 1px solid #6b4a9e;
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  overflow: hidden;
 }
 
 .prototype-frame iframe {
@@ -213,6 +314,7 @@ body {
   height: 100%;
   border: none;
 }
+
 
 /* =========================================
    PROJECTS PAGE
@@ -226,9 +328,16 @@ body {
 }
 
 .project-card {
-  background-color: #2d1a4d;
-  border: 1px solid #4a2f78;
+  background-color: var(--surface);
+  border: 1px solid var(--border);
   overflow: hidden;
+  border-radius: 8px;
+  transition: transform 0.2s, border-color 0.2s;
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--red);
 }
 
 .project-visual {
@@ -236,15 +345,15 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #3d2563;
+  background-color: var(--surface-light);
 }
 
 .marvel-visual {
-  background: linear-gradient(135deg, #3d1027, #6b1f3b);
+  background: linear-gradient(135deg, #26151C, #6B1D32);
 }
 
 .bananas-visual {
-  background: linear-gradient(135deg, #665018, #a47b22);
+  background: linear-gradient(135deg, #49331A, #8B5B20);
 }
 
 .project-card-content {
@@ -256,84 +365,79 @@ body {
 }
 
 .project-card-content p {
-  color: #d4c4ee;
+  color: var(--text-muted);
 }
 
 .project-tools {
   margin-top: 15px;
-  color: #c9a8f5;
-  font-size: 14px;
+  color: var(--red-bright);
+  font-family: 'Space Mono', monospace;
+  font-size: 12px;
 }
 
-/* Individual project preview sections */
-
 .project-number {
-  color: #c9a8f5;
+  color: var(--red-bright);
+  font-family: 'Space Mono', monospace;
   font-size: 13px;
-  letter-spacing: 2px;
   margin-bottom: 5px;
 }
 
-.prototype-frame {
-  margin-top: 10px;
-  overflow: hidden;
-}
-
 .game-preview {
-  background-color: #3d2563;
-  border: 1px solid #6b4a9e;
+  background-color: var(--surface-light);
+  border: 1px solid var(--border);
   padding: 45px 20px;
   text-align: center;
+  border-radius: 5px;
 }
 
 .game-preview h3 {
-  font-size: 25px;
+  font-size: 27px;
   margin-bottom: 10px;
 }
 
 .game-preview p {
-  color: #d4c4ee;
+  color: var(--text-muted);
   margin-bottom: 20px;
 }
 
-.game-preview .primary-button {
-  margin: 0;
-}
 
 /* =========================================
-   CFU SHOWCASE INTRO
+   CFU SHOWCASE
 ========================================= */
 
 .cfu-intro h1 {
-  font-size: 38px;
-  margin-bottom: 10px;
+  font-size: 42px;
+  margin-bottom: 12px;
 }
 
 .cfu-intro h1 span {
-  color: #c9a8f5;
+  color: var(--red-bright);
 }
 
 .cfu-intro p {
-  color: #d4c4ee;
+  color: var(--text-muted);
 }
 
 .cfu-eyebrow {
-  color: #b9a6d6;
-  font-size: 13px;
+  color: var(--red-bright);
+  font-family: 'Space Mono', monospace;
+  font-size: 12px;
   letter-spacing: 2px;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
 }
 
+
 /* =========================================
-   LARGE EMBEDDED CFU WINDOWS
+   LARGE CFU WINDOWS
 ========================================= */
 
 .cfu-project {
   width: 100%;
-  background-color: #2d1a4d;
-  border: 1px solid #4a2f78;
+  background-color: var(--surface);
+  border: 1px solid var(--border);
   padding: 25px;
   margin: 35px 0;
+  border-radius: 8px;
 }
 
 .cfu-project-heading {
@@ -344,34 +448,38 @@ body {
 }
 
 .cfu-project-heading span {
-  color: #c9a8f5;
-  font-size: 14px;
+  color: var(--red-bright);
+  font-family: 'Space Mono', monospace;
+  font-size: 13px;
   font-weight: bold;
   letter-spacing: 2px;
 }
 
 .cfu-project-heading h2 {
-  font-size: 24px;
-  color: #e8e0f5;
+  font-size: 27px;
+  color: var(--text);
 }
 
 .cfu-project iframe {
   display: block;
   width: 100%;
   height: 750px;
-  border: 1px solid #6b4a9e;
+  border: 1px solid var(--border);
   background-color: white;
+  border-radius: 4px;
 }
+
 
 /* =========================================
    RESOURCE CARDS
 ========================================= */
 
 .resource-card {
-  background-color: #2d1a4d;
-  border: 1px solid #4a2f78;
-  padding: 20px;
+  background-color: var(--surface);
+  border: 1px solid var(--border);
+  padding: 25px;
   margin: 25px auto;
+  border-radius: 8px;
 }
 
 .resource-card iframe {
@@ -380,6 +488,7 @@ body {
   border: none;
 }
 
+
 /* =========================================
    CONTACT PAGE
 ========================================= */
@@ -387,6 +496,16 @@ body {
 .contact-header {
   display: flex;
   justify-content: space-between;
+}
+
+.contact-text h2 {
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+
+.contact-text p {
+  color: var(--text-muted);
+  margin-bottom: 12px;
 }
 
 .contact-image img {
@@ -403,16 +522,39 @@ body {
 }
 
 .contact-card {
-  background-color: #2d1a4d;
-  border: 1px solid #4a2f78;
-  padding: 18px;
-  color: #e8e0f5;
+  display: block;
+  background-color: var(--surface-light);
+  border: 1px solid var(--border);
+  padding: 22px;
+  color: var(--text);
   text-decoration: none;
+  border-radius: 6px;
+  min-width: 220px;
+  transition: 0.2s ease;
 }
 
 .contact-card:hover {
-  background-color: #3d2563;
+  border-color: var(--red-bright);
+  background-color: #43212D;
+  transform: translateY(-3px);
 }
+
+.contact-card h3 {
+  margin-bottom: 8px;
+  color: var(--red-bright);
+}
+
+.contact-card p {
+  color: var(--text-muted);
+  margin-bottom: 10px;
+}
+
+.contact-card span {
+  color: var(--red-bright);
+  font-family: 'Space Mono', monospace;
+  font-size: 12px;
+}
+
 
 /* =========================================
    FOOTER
@@ -420,28 +562,37 @@ body {
 
 .site-footer {
   text-align: center;
-  padding: 25px;
-  margin-top: 40px;
-  color: #b9a6d6;
+  padding: 30px;
+  margin-top: 45px;
+  color: var(--text-muted);
+  border-top: 1px solid var(--border);
 }
 
 .footer-small {
-  font-size: 13px;
+  font-size: 12px;
+  font-family: 'Space Mono', monospace;
 }
+
 
 /* =========================================
    RESPONSIVE DESIGN
 ========================================= */
 
 @media (max-width: 800px) {
+
   .navbar {
     justify-content: center;
+    padding: 20px;
+  }
+
+  .navbar-right {
+    gap: 18px;
   }
 
   .hero-section {
     flex-direction: column;
     text-align: center;
-    padding: 25px 15px;
+    padding: 25px 18px;
   }
 
   .hero-image,
@@ -451,11 +602,11 @@ body {
   }
 
   .hero-content {
-    margin-top: 20px;
+    margin-top: 25px;
   }
 
   .hero-name {
-    font-size: 38px;
+    font-size: 42px;
   }
 
   .projects-grid {
@@ -468,8 +619,18 @@ body {
 }
 
 @media (max-width: 700px) {
+
   .home-card {
     width: 94%;
+    margin: 25px auto;
+  }
+
+  .navbar-right {
+    gap: 13px;
+  }
+
+  .navbar-right a {
+    font-size: 15px;
   }
 
   .cfu-project {
@@ -481,10 +642,26 @@ body {
   }
 
   .cfu-intro h1 {
-    font-size: 32px;
+    font-size: 34px;
   }
 
   .cfu-project-heading h2 {
-    font-size: 20px;
+    font-size: 22px;
+  }
+
+  .project-preview {
+    padding: 16px;
+  }
+
+  .contact-grid {
+    flex-direction: column;
+  }
+
+  .contact-card {
+    width: 100%;
+  }
+
+  .hero-name {
+    font-size: 36px;
   }
 }
