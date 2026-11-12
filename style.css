@@ -649,3 +649,107 @@ body {
     grid-template-columns: 1fr;
   }
 }
+
+
+
+/* =========================================
+   PROJECT EMBEDS
+========================================= */
+
+.project-preview {
+  background-color: #2d1a4d;
+  border: 1px solid #4a2f78;
+  padding: 25px;
+  margin: 25px auto 35px;
+}
+
+.project-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.project-info h3 {
+  font-size: 26px;
+  margin: 5px 0 8px;
+}
+
+.project-info p {
+  color: #d4c4ee;
+  max-width: 650px;
+  font-size: 15px;
+}
+
+.project-number {
+  color: #b9a6d6;
+  font-size: 13px;
+  letter-spacing: 1px;
+}
+
+.prototype-frame {
+  width: 100%;
+  height: 650px;
+  border: 1px solid #6b4a9e;
+  background-color: #1a0f2e;
+  overflow: hidden;
+}
+
+.prototype-frame iframe {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border: none;
+}
+
+/* Go Bananas game section */
+
+.game-preview {
+  min-height: 280px;
+  background-color: #241239;
+  border: 1px solid #6b4a9e;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 35px 20px;
+}
+
+.game-icon {
+  font-size: 65px;
+  margin-bottom: 10px;
+}
+
+.game-preview h3 {
+  font-size: 25px;
+  margin-bottom: 8px;
+}
+
+.game-preview p {
+  color: #d4c4ee;
+  margin-bottom: 20px;
+  max-width: 450px;
+}
+
+@media (max-width: 800px) {
+  .project-preview {
+    padding: 15px;
+  }
+
+  .project-info {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .prototype-frame {
+    height: 450px;
+  }
+}
+
+@media (max-width: 500px) {
+  .prototype-frame {
+    height: 350px;
+  }
+}
