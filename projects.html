@@ -24,20 +24,103 @@
 
 <main class="home-card">
 
-  <section class="resource-card">
-    <h2>Projects</h2>
-    <p>My game development, programming, design, and prototyping work.</p>
+  <!-- PAGE INTRODUCTION -->
+  <section class="resource-card projects-intro">
+    <p class="projects-eyebrow">MY WORK</p>
+    <h1>Projects<span>.</span></h1>
+    <p>
+      A collection of projects I've worked on through programming,
+      game development, and creative design.
+    </p>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="projects-grid">
+
+    <!-- MARVEL PORTFOLIO -->
+    <article class="project-card">
+
+      <div class="project-card-top">
+        <span class="project-category">WEB DESIGN / FIGMA</span>
+        <span class="project-number">01</span>
+      </div>
+
+      <div class="project-visual marvel-visual">
+        <div class="visual-symbol">M</div>
+        <span>MARVEL</span>
+      </div>
+
+      <div class="project-card-content">
+        <h2>Marvel-Themed Portfolio</h2>
+
+        <p>
+          A creative portfolio website inspired by the Marvel universe.
+          This project explores themed web design, visual layouts, and
+          presenting content through a recognizable style.
+        </p>
+
+        <div class="project-tools">
+          <span>Figma</span>
+          <span>Creative Design</span>
+          <span>Prototyping</span>
+        </div>
+
+        <div class="project-card-footer">
+          <span>Design Project</span>
+        </div>
+      </div>
+
+    </article>
+
+    <!-- GO BANANAS -->
+    <article class="project-card">
+
+      <div class="project-card-top">
+        <span class="project-category">GAME DEVELOPMENT</span>
+        <span class="project-number">02</span>
+      </div>
+
+      <div class="project-visual bananas-visual">
+        <div class="banana-symbol">🍌</div>
+        <span>GO BANANAS</span>
+      </div>
+
+      <div class="project-card-content">
+        <h2>Go Bananas</h2>
+
+        <p>
+          A game development project built using Unity. This project
+          gave me experience with game design, programming, and creating
+          an interactive gameplay experience.
+        </p>
+
+        <div class="project-tools">
+          <span>Unity</span>
+          <span>C#</span>
+          <span>Game Design</span>
+        </div>
+
+        <div class="project-card-footer">
+          <span>Game Development Project</span>
+        </div>
+      </div>
+
+    </article>
+
   </section>
 
 </main>
 
-<footer class="resource-card">
-  <p>© <span id="year"></span> Karan Mehta</p>
+<footer class="site-footer">
+  <p>Made by Karan Mehta</p>
+  <p class="footer-small">
+    © <span id="year"></span> All Rights Reserved.
+  </p>
 </footer>
 
 <script>
-document.getElementById("year").textContent =
-new Date().getFullYear();
+  document.getElementById("year").textContent =
+    new Date().getFullYear();
 </script>
 
 </body>
