@@ -665,3 +665,177 @@ a {
     font-size: 36px;
   }
 }
+
+
+/* =================================
+   CONTACT PAGE IMPROVEMENTS
+================================= */
+
+.contact-hero {
+  position: relative;
+  overflow: hidden;
+  padding: 55px 35px !important;
+}
+
+.contact-label {
+  display: inline-block;
+  color: var(--red-bright);
+  font-family: 'Space Mono', monospace;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  margin-bottom: 14px;
+}
+
+.contact-hero h1 {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 54px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  line-height: 1.1;
+}
+
+.contact-hero h1 span {
+  color: var(--red-bright);
+}
+
+.contact-intro {
+  max-width: 650px;
+  font-size: 18px;
+  line-height: 1.8;
+  color: var(--text-muted);
+}
+
+.contact-hero-line {
+  width: 75px;
+  height: 4px;
+  background: var(--red-bright);
+  margin-top: 28px;
+  border-radius: 5px;
+}
+
+/* SECTION HEADINGS */
+
+.section-heading {
+  margin-bottom: 25px;
+}
+
+.section-heading h2 {
+  margin-bottom: 8px;
+}
+
+.section-heading p {
+  color: var(--text-muted);
+  font-size: 16px;
+}
+
+/* CONTACT CARDS */
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.contact-card {
+  display: block;
+  min-width: 0;
+  text-decoration: none;
+  background: var(--surface-light);
+  border: 1px solid var(--border);
+  border-radius: 9px;
+  padding: 25px;
+  transition: transform 0.25s ease,
+              border-color 0.25s ease,
+              box-shadow 0.25s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--red-bright);
+  box-shadow: 0 8px 25px rgba(240, 68, 85, 0.12);
+}
+
+.contact-card h3 {
+  color: var(--red-bright);
+  margin-bottom: 12px;
+}
+
+.contact-card p {
+  color: var(--text-muted);
+  margin-bottom: 20px;
+}
+
+.contact-card span {
+  color: var(--red-bright);
+  font-family: 'Space Mono', monospace;
+  font-size: 13px;
+}
+
+/* WHAT I'M OPEN TO */
+
+.open-to-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.open-to-card {
+  background: var(--surface-light);
+  border: 1px solid var(--border);
+  border-radius: 9px;
+  padding: 25px;
+  transition: transform 0.25s ease,
+              border-color 0.25s ease;
+}
+
+.open-to-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--red-bright);
+}
+
+.open-to-icon {
+  color: var(--red-bright);
+  font-family: 'Space Mono', monospace;
+  font-size: 14px;
+  margin-bottom: 22px;
+}
+
+.open-to-card h3 {
+  color: var(--text);
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 23px;
+  margin-bottom: 10px;
+}
+
+.open-to-card p {
+  color: var(--text-muted);
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 700px) {
+
+  .contact-hero {
+    padding: 35px 22px !important;
+  }
+
+  .contact-hero h1 {
+    font-size: 42px;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .open-to-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-intro {
+    font-size: 16px;
+  }
+
+}
